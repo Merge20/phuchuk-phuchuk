@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
     <title>Symptoms</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
             <div class="web-title">Disease Checker</div>
             <div class="progress">
                 <div class="circle">
-                    <div class="circle1">75%</div>
-                    <div class="circle2">Step 3/4</div>
+                    <div class="circle1" id="progressPercent">75%</div>
+                    <div class="circle2" id="progressStep">Step 3/4</div>
                 </div>
             </div>
             <div class="tabs">
@@ -26,26 +27,35 @@
                 <div class="cure"><img class="icons" src="assets/cure.svg">Cure</div>
             </div>
         </div>
+
         <div class="right">
             <div class="r1">
                 <div class="step">STEP 3/4</div>
                 <div class="text1">Add your symptoms</div>
             </div>
+
             <div class="r2">
                 <div class="search-box">
                     <div class="search-icon"><img src="assets/search-icon.svg"></div>
-                    <div class="main-search-box"><input type="text" id="symptom" name="symptom" placeholder="Search, eg: Headache, cough" required/></div>
-                </div>
-                <div class="common-symp">
-                    <div class="head-text">Common Symptoms:</div>
-                    <div class="main-common-symptoms">
-
+                    <div class="main-search-box">
+                        <input type="text" id="symptom" placeholder="Search, eg: Headache, cough" readonly>
                     </div>
                 </div>
+
+                <div class="common-symp">
+                    <div class="head-text">Common Symptoms:</div>
+                    <div class="main-common-symptoms"></div>
+                </div>
             </div>
+
             <div class="r3">
-                <button class="previous"><img src="assets/left-arrow.svg"> Previous</button>
-                <button class="next">Next</button>
+                <button class="previous">
+                    <img src="assets/left-arrow.svg" class="btn-icon">
+                    Previous
+                </button>
+                <button class="next" disabled>
+                    Next
+                </button>
             </div>
         </div>
     </div>
