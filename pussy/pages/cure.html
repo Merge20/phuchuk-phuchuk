@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cure.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="../script/cure.js"></script>
+    <title>Cure</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="web-title">Disease Checker</div>
+            <div class="progress">
+                <div class="circle">
+                    <div class="circle1">100%</div>
+                    <div class="circle2">Step 4/4</div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="gender"><img class="icons" src="../assets/gender.svg">Gender</div>
+                <div class="age"><img class="icons" src="../assets/age.svg">Age</div>
+                <div class="symptoms"><img class="icons" src="../assets/symptom.svg">Symptoms</div>
+                <div class="cure active"><img class="icons" src="../assets/cure.svg">Cure</div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="r1">
+                <div class="step">STEP 4/4</div>
+                <div class="text1">Disease & Cure</div>
+            </div>
+
+            <div class="results-container" id="resultsContainer"></div>
+
+            <div class="r3">
+                <button class="previous" onclick="window.location.href='../index.html'">
+                    <img src="../assets/left-arrow.svg" class="btn-icon">
+                    Back
+                </button>
+                <button class="next" onclick="window.location.href='../index.html'">
+                    Start Over
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

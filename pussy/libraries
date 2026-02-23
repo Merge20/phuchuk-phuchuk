@@ -1,0 +1,1 @@
+python -m pip install pandas numpy scikit-learn fastapi uvicorn pydantic python-multipart
